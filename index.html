@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECUASECURITY | Seguridad Privada, Monitoreo y Tecnología en Ecuador</title>
+  <meta name="description" content="ECUASECURITY es una empresa ecuatoriana de seguridad privada: seguridad física, monitoreo y seguridad electrónica, control de rondas y localización GPS." />
+  <meta name="keywords" content="seguridad privada Ecuador, vigilancia, monitoreo, seguridad electrónica, control de rondas, GPS, guardias de seguridad, ECUASECURITY" />
+  <meta name="author" content="ECUASECURITY" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#060b16" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ECUASECURITY" />
+  <meta property="og:title" content="ECUASECURITY | Seguridad Privada, Monitoreo y Tecnología" />
+  <meta property="og:description" content="Seguridad física, monitoreo electrónico, control de rondas y GPS. Soluciones integrales de seguridad privada en Ecuador." />
+  <meta property="og:locale" content="es_EC" />
+  <!-- TODO: agregar og:image (1200x630) e imagen social real cuando esté disponible -->
+
+  <!-- TODO: confirmar y actualizar la URL final (dominio propio o GitHub Pages) -->
+  <!-- <link rel="canonical" href="https://www.ecuasecurity.com.ec/" /> -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Tipografía (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Datos estructurados (SEO) — solo campos verificables, sin datos inventados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ECUASECURITY",
+    "description": "Empresa ecuatoriana de seguridad privada: seguridad física, monitoreo y seguridad electrónica, control de rondas y localización GPS.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "EC"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Enlace de accesibilidad: permite saltar directo al contenido con teclado -->
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <!-- ==========================================================================
+       HEADER / NAVEGACIÓN FIJA
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#inicio" class="brand" aria-label="ECUASECURITY, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
+          <path d="M9 12l2 2 4-4" />
+        </svg>
+        <span>
+          ECUASECURITY
+          <span class="brand__text-sub">Seguridad &amp; Tecnología</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+        <ul class="nav-menu__list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li class="nav-item--dropdown">
+            <a href="#servicios" class="nav-link nav-item__toggle" aria-haspopup="true">
+              Servicios
+              <svg class="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#seguridad-fisica">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /></svg>
+                Seguridad física
+              </a>
+              <a href="#monitoreo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" /><circle cx="12" cy="13" r="3.5" /></svg>
+                Monitoreo y seguridad electrónica
+              </a>
+              <a href="#rondas">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.2" /><circle cx="18" cy="5" r="2.2" /><path d="M8 19h7a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3H9a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h.5" /></svg>
+                Control de rondas
+              </a>
+              <a href="#gps">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l17-8-8 17-2.5-6.5L3 11z" /></svg>
+                GPS y localización
+              </a>
+            </div>
+          </li>
+          <li><a href="#certificaciones" class="nav-link">Certificaciones</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--primary nav-menu__cta">Solicitar cotización</a>
+      </nav>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         1. INICIO — HERO
+         ========================================================================== -->
+    <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="tech-grid-bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /></svg>
+            Seguridad privada en Ecuador
+          </span>
+          <h1>Protección <span>inteligente</span> para personas, bienes y empresas</h1>
+          <p>ECUASECURITY combina personal de seguridad capacitado con tecnología de monitoreo y control para ofrecer soluciones integrales de protección, adaptadas a las necesidades de cada cliente.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary">
+              Solicitar cotización
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a href="#servicios" class="btn btn--outline">Conocer servicios</a>
+          </div>
+          <ul class="hero__trust" aria-label="Áreas de servicio">
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Seguridad física
+            </li>
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Monitoreo electrónico
+            </li>
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Control de rondas
+            </li>
+            <li class="hero__trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              GPS y localización
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="radar">
+            <div class="radar__sweep"></div>
+            <div class="radar__core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /><path d="M9 12l2 2 4-4" /></svg>
+            </div>
+            <span class="radar__dot"></span>
+            <span class="radar__dot"></span>
+            <span class="radar__dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#nosotros" class="hero__scroll-cue">
+        Desplázate
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         2. NOSOTROS
+         ========================================================================== -->
+    <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container split reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Quiénes somos</span>
+          <h2 id="nosotros-title">Nosotros</h2>
+          <p>ECUASECURITY es una empresa ecuatoriana de seguridad privada, orientada a proteger personas, bienes e instalaciones mediante la combinación de personal de seguridad capacitado y herramientas tecnológicas de monitoreo, control y localización.</p>
+          <p>
+            <!-- TODO: reemplazar con la misión, visión e historia oficiales de ECUASECURITY -->
+            Misión, visión e historia de la empresa: <span class="badge badge--muted">Contenido pendiente de ECUASECURITY</span>
+          </p>
+
+          <div class="grid grid--2" style="margin-top: var(--space-lg);">
+            <div class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px;color:var(--color-primary-light);margin-bottom:0.5rem;"><rect x="4" y="11" width="16" height="9" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
+              <h4>Confiabilidad</h4>
+              <p style="font-size:var(--fs-sm);">Procesos de seguridad orientados al cumplimiento y la prevención.</p>
+            </div>
+            <div class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px;color:var(--color-primary-light);margin-bottom:0.5rem;"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" /><circle cx="12" cy="13" r="3.5" /></svg>
+              <h4>Tecnología</h4>
+              <p style="font-size:var(--fs-sm);">Monitoreo y control apoyados en herramientas electrónicas.</p>
+            </div>
+            <div class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px;color:var(--color-primary-light);margin-bottom:0.5rem;"><circle cx="9" cy="8" r="3.2" /><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" /><circle cx="17.5" cy="9" r="2.6" /><path d="M15.5 20c0-2.6 1.7-4.7 4-5.5" /></svg>
+              <h4>Personal capacitado</h4>
+              <p style="font-size:var(--fs-sm);">Equipo formado para actuar con criterio ante cada situación.</p>
+            </div>
+            <div class="feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px;color:var(--color-primary-light);margin-bottom:0.5rem;"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              <h4>Compromiso</h4>
+              <p style="font-size:var(--fs-sm);">Atención cercana y adaptada a cada cliente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="split__visual">
+          <!-- Estadísticas empresariales — valores no disponibles: se marcan como pendientes -->
+          <div class="stats-grid" aria-label="Estadísticas de la empresa (pendientes de confirmación)">
+            <div class="stat-card">
+              <span class="stat-card__value is-placeholder">Dato pendiente</span>
+              <span class="stat-card__label">Años de trayectoria</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value is-placeholder">Dato pendiente</span>
+              <span class="stat-card__label">Clientes atendidos</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value is-placeholder">Dato pendiente</span>
+              <span class="stat-card__label">Personal operativo</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value is-placeholder">Dato pendiente</span>
+              <span class="stat-card__label">Cobertura geográfica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SERVICIOS — VISTA GENERAL
+         ========================================================================== -->
+    <section class="section section--alt" id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Lo que hacemos</span>
+          <h2 id="servicios-title">Servicios</h2>
+          <p>Soluciones de seguridad privada diseñadas para complementar la protección física con tecnología de monitoreo y control.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /></svg>
+            </div>
+            <h3>Seguridad física</h3>
+            <p>Personal de seguridad capacitado para la protección de instalaciones, control de acceso y respuesta ante incidentes.</p>
+            <a href="#seguridad-fisica" class="service-card__link">
+              Conocer más
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" /><circle cx="12" cy="13" r="3.5" /></svg>
+            </div>
+            <h3>Monitoreo y seguridad electrónica</h3>
+            <p>Videovigilancia, alarmas y central de monitoreo para el control remoto de instalaciones.</p>
+            <a href="#monitoreo" class="service-card__link">
+              Conocer más
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2.2" /><circle cx="18" cy="5" r="2.2" /><path d="M8 19h7a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3H9a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h.5" /></svg>
+            </div>
+            <h3>Control de rondas</h3>
+            <p>Supervisión de recorridos y puntos de control para verificar el cumplimiento de protocolos.</p>
+            <a href="#rondas" class="service-card__link">
+              Conocer más
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l17-8-8 17-2.5-6.5L3 11z" /></svg>
+            </div>
+            <h3>GPS y localización</h3>
+            <p>Ubicación y trazabilidad de unidades y personal en tiempo real mediante tecnología GPS.</p>
+            <a href="#gps" class="service-card__link">
+              Conocer más
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SEGURIDAD FÍSICA
+         ========================================================================== -->
+    <section class="section" id="seguridad-fisica" aria-labelledby="seguridad-fisica-title">
+      <div class="container split reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Servicio</span>
+          <h2 id="seguridad-fisica-title">Seguridad física</h2>
+          <p>Personal de seguridad capacitado para el resguardo de instalaciones, control de accesos y respuesta ante situaciones de riesgo, siguiendo protocolos definidos junto al cliente.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Guardias de seguridad capacitados
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Control de acceso de personas y vehículos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Protocolos de actuación ante incidentes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Coordinación directa con el cliente
+            </li>
+          </ul>
+        </div>
+        <div class="split__visual" aria-hidden="true">
+          <div class="radar" style="max-width: 340px;">
+            <div class="radar__sweep"></div>
+            <div class="radar__core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MONITOREO Y SEGURIDAD ELECTRÓNICA
+         ========================================================================== -->
+    <section class="section section--alt" id="monitoreo" aria-labelledby="monitoreo-title">
+      <div class="container split split--reverse reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Servicio</span>
+          <h2 id="monitoreo-title">Monitoreo y seguridad electrónica</h2>
+          <p>Integración de cámaras de videovigilancia, alarmas y sistemas de monitoreo para complementar la seguridad física con control remoto de instalaciones.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Videovigilancia (CCTV)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Sistemas de alarma
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Central de monitoreo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Integración con seguridad física en sitio
+            </li>
+          </ul>
+        </div>
+        <div class="split__visual" aria-hidden="true">
+          <div class="radar" style="max-width: 340px;">
+            <div class="radar__sweep"></div>
+            <div class="radar__core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" /><circle cx="12" cy="13" r="3.5" /></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. CONTROL DE RONDAS
+         ========================================================================== -->
+    <section class="section" id="rondas" aria-labelledby="rondas-title">
+      <div class="container split reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Servicio</span>
+          <h2 id="rondas-title">Control de rondas</h2>
+          <p>Supervisión de los recorridos de vigilancia mediante puntos de control, permitiendo verificar el cumplimiento de los protocolos establecidos.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Puntos de control (checkpoints)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Registro de recorridos realizados
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Reportes de cumplimiento
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Trazabilidad de la vigilancia
+            </li>
+          </ul>
+        </div>
+        <div class="split__visual" aria-hidden="true">
+          <div class="radar" style="max-width: 340px;">
+            <div class="radar__sweep"></div>
+            <div class="radar__core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.2" /><circle cx="18" cy="5" r="2.2" /><path d="M8 19h7a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3H9a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h.5" /></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. GPS Y LOCALIZACIÓN
+         ========================================================================== -->
+    <section class="section section--alt" id="gps" aria-labelledby="gps-title">
+      <div class="container split split--reverse reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Servicio</span>
+          <h2 id="gps-title">GPS y localización</h2>
+          <p>Tecnología de posicionamiento para ubicar y dar seguimiento a unidades y personal en tiempo real, aportando trazabilidad a las operaciones de seguridad.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Ubicación en tiempo real
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Trazabilidad de recorridos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Reportes de ubicación
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Apoyo a la toma de decisiones operativas
+            </li>
+          </ul>
+        </div>
+        <div class="split__visual" aria-hidden="true">
+          <div class="radar" style="max-width: 340px;">
+            <div class="radar__sweep"></div>
+            <div class="radar__core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l17-8-8 17-2.5-6.5L3 11z" /></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CERTIFICACIONES Y CUMPLIMIENTO
+         ========================================================================== -->
+    <section class="section" id="certificaciones" aria-labelledby="certificaciones-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Cumplimiento</span>
+          <h2 id="certificaciones-title">Certificaciones y cumplimiento</h2>
+          <p>
+            <!-- TODO: reemplazar con las certificaciones y permisos reales de ECUASECURITY -->
+            Esta sección se actualizará con las certificaciones, permisos de funcionamiento y normativa aplicable una vez confirmados por ECUASECURITY.
+          </p>
+        </div>
+
+        <div class="grid grid--4">
+          <div class="cert-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5" /><path d="M8.5 12.5L7 21l5-2.5L17 21l-1.5-8.5" /></svg>
+            <h4>Permiso de operación</h4>
+            <span>Dato pendiente</span>
+          </div>
+          <div class="cert-card reveal reveal-delay-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
+            <h4>Cumplimiento normativo</h4>
+            <span>Dato pendiente</span>
+          </div>
+          <div class="cert-card reveal reveal-delay-2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6" /><circle cx="17.5" cy="9" r="2.6" /><path d="M15.5 20c0-2.6 1.7-4.7 4-5.5" /></svg>
+            <h4>Capacitación del personal</h4>
+            <span>Dato pendiente</span>
+          </div>
+          <div class="cert-card reveal reveal-delay-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9S9.5 5.5 12 3z" /></svg>
+            <h4>Certificaciones de calidad</h4>
+            <span>Dato pendiente</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CONTACTO
+         ========================================================================== -->
+    <section class="section section--alt" id="contacto" aria-labelledby="contacto-title">
+      <div class="container split reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Hablemos</span>
+          <h2 id="contacto-title">Contacto</h2>
+          <p>¿Necesitas una solución de seguridad para tu empresa o propiedad? Escríbenos y nuestro equipo se pondrá en contacto contigo.</p>
+
+          <div style="margin-top: var(--space-lg);">
+            <div class="contact-info-item">
+              <span class="contact-info-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1.5a11 11 0 0 0 5.5 5.5L15 13l5 2v2c0 1-1 2-2 2C10.5 19 4 12.5 4 5z" /></svg>
+              </span>
+              <div>
+                <h4>Teléfono</h4>
+                <!-- TODO: reemplazar con el número de contacto real de ECUASECURITY -->
+                <p><span class="badge badge--muted">Dato pendiente</span></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+              </span>
+              <div>
+                <h4>Correo electrónico</h4>
+                <!-- TODO: reemplazar con el correo de contacto oficial de ECUASECURITY -->
+                <p><span class="badge badge--muted">Dato pendiente</span></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.4 7-11.5A7 7 0 0 0 5 9.5C5 14.6 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.4" /></svg>
+              </span>
+              <div>
+                <h4>Dirección</h4>
+                <!-- TODO: reemplazar con la dirección real de las oficinas -->
+                <p><span class="badge badge--muted">Dato pendiente</span> — Ecuador</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" /></svg>
+              </span>
+              <div>
+                <h4>Horario de atención</h4>
+                <!-- TODO: reemplazar con el horario real de atención -->
+                <p><span class="badge badge--muted">Dato pendiente</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-md);">
+            <!-- TODO: actualizar con los enlaces reales a redes sociales -->
+            <div class="social-links" aria-label="Redes sociales de ECUASECURITY">
+              <a href="#" aria-label="Facebook de ECUASECURITY">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15 8.5h2V5.5h-2c-2.2 0-3.5 1.4-3.5 3.6V11H9v3h2.5v7h3v-7h2.3l.4-3h-2.7V9.3c0-.6.3-.8.8-.8z" /></svg>
+              </a>
+              <a href="#" aria-label="Instagram de ECUASECURITY">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" /></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn de ECUASECURITY">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8" /><circle cx="7.5" cy="8" r="1.4" fill="currentColor" /><path d="M7.5 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.3-2.5S17 12 17 13.5V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="split__visual">
+          <!--
+            TODO (integración pendiente): este formulario aún no está conectado a
+            ningún servicio de envío. Antes de publicar en producción, integrarlo
+            con un backend propio o un servicio de formularios (por ejemplo,
+            Formspree) para que los mensajes lleguen realmente a ECUASECURITY.
+          -->
+          <form class="contact-form" action="#" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input class="form-control" type="tel" id="telefono" name="telefono" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input class="form-control" type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio de interés</label>
+              <select class="form-control" id="servicio" name="servicio">
+                <option value="">Selecciona una opción</option>
+                <option value="seguridad-fisica">Seguridad física</option>
+                <option value="monitoreo">Monitoreo y seguridad electrónica</option>
+                <option value="rondas">Control de rondas</option>
+                <option value="gps">GPS y localización</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Enviar mensaje
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </button>
+            <p class="form-note">Al enviar este formulario aceptas ser contactado por ECUASECURITY respecto a tu solicitud.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#inicio" class="brand" aria-label="ECUASECURITY, ir al inicio">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /><path d="M9 12l2 2 4-4" /></svg>
+          <span>ECUASECURITY</span>
+        </a>
+        <p style="margin-top: var(--space-sm); font-size: var(--fs-sm);">Empresa ecuatoriana de seguridad privada: seguridad física, monitoreo electrónico, control de rondas y localización GPS.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#seguridad-fisica">Seguridad física</a></li>
+          <li><a href="#monitoreo">Monitoreo electrónico</a></li>
+          <li><a href="#rondas">Control de rondas</a></li>
+          <li><a href="#gps">GPS y localización</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <!-- TODO: reemplazar con los datos reales de contacto -->
+          <li>Teléfono: <span class="badge badge--muted">Pendiente</span></li>
+          <li>Correo: <span class="badge badge--muted">Pendiente</span></li>
+          <li>Ecuador</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year"></span> ECUASECURITY. Todos los derechos reservados.</p>
+      <p>Sitio en desarrollo — contenido sujeto a actualización.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       TODO: reemplazar "593000000000" por el número real de WhatsApp de ECUASECURITY
+       ========================================================================== -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/593000000000?text=Hola%2C%20quisiera%20más%20información%20sobre%20los%20servicios%20de%20ECUASECURITY"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <span class="whatsapp-float__ping" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.2-3.5-.7-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.7.8c.2.1.4.2.4.4.1.2.1.9-.1 1.5z" /></svg>
+  </a>
+
+  <!-- Botón "volver arriba" -->
+  <button type="button" class="back-to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6" /></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/scrollReveal.js" defer></script>
+</body>
+</html>

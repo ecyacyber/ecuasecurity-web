@@ -1,0 +1,118 @@
+/* ==========================================================================
+   LAYOUT.CSS
+   Estructura general: header fijo, secciones, footer, grids de página.
+   ========================================================================== */
+
+/* --- Header / navegación fija --- */
+.site-header {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: var(--header-height);
+  z-index: var(--z-header);
+  background: rgba(6, 11, 22, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.site-header.is-scrolled {
+  background: rgba(6, 11, 22, 0.95);
+  box-shadow: var(--shadow-md);
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+/* --- Secciones --- */
+.section {
+  padding-block: var(--space-2xl);
+  position: relative;
+}
+
+.section--alt {
+  background: var(--gradient-surface);
+}
+
+.section-header {
+  max-width: 680px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary-light);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  font-size: var(--fs-md);
+}
+
+/* --- Grids reutilizables --- */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+/* --- Bloque texto + visual (Nosotros, servicios detallados) --- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.split--reverse .split__visual {
+  order: 2;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: #030710;
+  border-top: 1px solid var(--color-border);
+  padding-block-start: var(--space-2xl);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.footer-bottom p {
+  font-size: var(--fs-xs);
+}
