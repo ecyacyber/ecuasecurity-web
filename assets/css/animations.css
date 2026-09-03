@@ -50,7 +50,7 @@
   max-width: 420px;
   margin-inline: auto;
   border-radius: 50%;
-  border: 1px solid rgba(14, 165, 233, 0.25);
+  border: 1px solid rgba(196, 30, 30, 0.25);
   display: grid;
   place-items: center;
 }
@@ -60,7 +60,7 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(14, 165, 233, 0.18);
+  border: 1px solid rgba(196, 30, 30, 0.18);
 }
 
 .radar::before {
@@ -75,7 +75,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(14, 165, 233, 0.55), transparent 32%);
+  background: conic-gradient(from 0deg, rgba(196, 30, 30, 0.55), transparent 32%);
   animation: radar-spin 4s linear infinite;
   -webkit-mask-image: radial-gradient(circle, transparent 0%, black 2%);
   mask-image: radial-gradient(circle, transparent 0%, black 2%);
@@ -102,7 +102,7 @@
 .radar__core svg {
   width: 46px;
   height: 46px;
-  color: #04121c;
+  color: #ffffff;
 }
 
 .radar__dot {
@@ -129,8 +129,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(14, 165, 233, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(14, 165, 233, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(196, 30, 30, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196, 30, 30, 0.06) 1px, transparent 1px);
   background-size: 42px 42px;
   -webkit-mask-image: linear-gradient(180deg, black, transparent 85%);
   mask-image: linear-gradient(180deg, black, transparent 85%);
