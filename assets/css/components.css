@@ -32,6 +32,27 @@
   text-transform: uppercase;
 }
 
+.brand__logo {
+  display: block;
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.site-header .brand {
+  flex-shrink: 0;
+}
+
+.site-header .brand__logo {
+  width: calc((var(--header-height) - 12px) * 1766 / 653);
+  max-height: calc(var(--header-height) - 12px);
+}
+
+.site-footer .brand__logo {
+  width: 260px;
+}
+
 /* --- Navegación principal --- */
 .nav-menu {
   display: flex;
