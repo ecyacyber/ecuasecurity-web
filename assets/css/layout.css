@@ -89,6 +89,14 @@
   order: 2;
 }
 
+#nosotros .split {
+  align-items: start;
+}
+
+#nosotros .split__visual {
+  transform: translateX(var(--space-xl));
+}
+
 /* --- Footer --- */
 .site-footer {
   background: #030710;
