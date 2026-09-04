@@ -329,6 +329,49 @@
   margin-top: 2px;
 }
 
+.about-compliance {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: var(--space-md);
+}
+
+.about-compliance li {
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.025);
+  line-height: 1.45;
+}
+
+.about-features {
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: var(--space-md);
+}
+
+.about-features .feature-item {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  column-gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.about-features .feature-item > svg {
+  grid-row: 1 / 3;
+  margin: 0 !important;
+}
+
+.about-features .feature-item h4,
+.about-features .feature-item p {
+  grid-column: 2;
+}
+
 /* --- Estadísticas --- */
 .stats-grid {
   display: grid;
@@ -474,6 +517,23 @@
   background: #999999;
 }
 
+#nosotros .stats-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+#nosotros .stat-card {
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card__value--text {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+}
+
 .client-card__logo--dark {
   background: #1f1d20;
 }
@@ -590,11 +650,26 @@ textarea.form-control {
 }
 
 /* --- Info de contacto --- */
+.contact-info-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: var(--space-lg);
+}
+
 .contact-info-item {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  margin-bottom: var(--space-md);
+  min-width: 0;
+  margin: 0;
+  padding: 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.contact-info-item > div {
+  min-width: 0;
 }
 
 .contact-info-item__icon {
@@ -626,6 +701,27 @@ textarea.form-control {
 .contact-info-item a {
   color: #ffffff;
   font-size: var(--fs-md);
+}
+
+.contact-info-item p + p {
+  margin-top: 0.2rem;
+}
+
+.contact-email-list {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-email-list a {
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(0.84rem, 1.35vw, 1rem);
+  line-height: 1.35;
+}
+
+.contact-email-list a:hover {
+  color: var(--color-primary-light);
 }
 
 /* --- Redes sociales --- */
@@ -676,6 +772,13 @@ textarea.form-control {
 
 .footer-col a:hover {
   color: var(--color-primary-light);
+}
+
+.footer-contact-list li,
+.footer-contact-list a {
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 /* --- Botón flotante de WhatsApp --- */
@@ -745,7 +848,103 @@ textarea.form-control {
   color: var(--color-text);
 }
 
-/* --- Hero: composición de imágenes --- */
+/* --- Franja visual bajo la portada --- */
+.hero-showcase {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-lg);
+  border-top: 1px solid rgba(230, 50, 50, 0.22);
+  border-bottom: 1px solid var(--color-border);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(196, 30, 30, 0.1), transparent 42%),
+    #07090c;
+}
+
+.hero-showcase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(520px, 70vw);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
+  box-shadow: 0 0 18px rgba(230, 50, 50, 0.55);
+}
+
+.hero-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.hero-showcase__card {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hero-showcase__card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(230, 50, 50, 0.42);
+  box-shadow: var(--shadow-lg), 0 0 26px rgba(196, 30, 30, 0.12);
+}
+
+.hero-showcase__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #090b0e;
+}
+
+.hero-showcase__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 54%, rgba(3, 5, 8, 0.45) 100%);
+}
+
+.hero-showcase__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.hero-showcase__card:hover .hero-showcase__media img {
+  transform: scale(1.025);
+}
+
+.hero-showcase__card figcaption {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.9rem 1rem 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.hero-showcase__card figcaption span {
+  color: var(--color-primary-light);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-showcase__card figcaption strong {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+}
+
+/* --- Hero: composición de imágenes (compatibilidad) --- */
 .hero-images {
   position: relative;
   display: grid;
@@ -808,6 +1007,61 @@ textarea.form-control {
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-sm);
   letter-spacing: 0.04em;
+}
+
+/* --- Servicios: distribución y vehículos blindados --- */
+.services-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.services-grid > .service-card {
+  grid-column: span 2;
+}
+
+.services-grid > .service-card:nth-last-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.armored-service {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 48%, rgba(196, 30, 30, 0.14), transparent 30%),
+    linear-gradient(145deg, #0a0a0a, #111111);
+}
+
+.armored-service__visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(230, 50, 50, 0.28);
+  border-radius: var(--radius-lg);
+  background: #171717;
+  box-shadow: var(--shadow-lg);
+}
+
+.armored-service__visual img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: contain;
+}
+
+.armored-service__visual span {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  background: rgba(5, 8, 12, 0.76);
+  color: #ffffff;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.armored-service .btn {
+  margin-top: var(--space-md);
 }
 
 /* --- Aliados estratégicos --- */

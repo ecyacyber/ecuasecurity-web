@@ -35,7 +35,7 @@
     "name": "ECUASECURITY C. Ltda.",
     "description": "Compañía ecuatoriana de seguridad y vigilancia privada con 20 años de experiencia.",
     "url": "https://www.ecuasecurity.com",
-    "telephone": ["+593939226390"],
+    "telephone": ["+593939226390", "+593987283676", "+593958918437"],
     "email": "operation.security@ecuasecurity.com.ec",
     "address": {
       "@type": "PostalAddress",
@@ -86,6 +86,10 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l17-8-8 17-2.5-6.5L3 11z" /></svg>
                 GPS y localización
               </a>
+              <a href="#vehiculos-blindados">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13l2-5h12l2 5v5H4v-5z" /><path d="M7 13h10M7 18v2M17 18v2" /><circle cx="7" cy="16" r="1" /><circle cx="17" cy="16" r="1" /></svg>
+                Vehículos blindados
+              </a>
             </div>
           </li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -105,7 +109,13 @@
          1. HERO
          ==================================================================== -->
     <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="hero__backdrop" aria-hidden="true">
+        <img src="assets/img/hero-equipo-operativo.jpg" alt="" loading="eager" />
+      </div>
       <div class="tech-grid-bg" aria-hidden="true"></div>
+      <div class="hero__watermark" aria-hidden="true">
+        <img src="assets/img/ecuasecurity-logo.png" alt="" />
+      </div>
       <div class="container hero__grid">
         <div class="hero__content">
           <span class="hero__eyebrow">
@@ -140,29 +150,48 @@
             </li>
           </ul>
         </div>
-
-        <div class="hero__visual">
-          <div class="hero-images">
-            <div class="hero-images__main">
-              <img src="assets/img/hero-guardia.jpg" alt="Guardia de seguridad ECUASECURITY equipado y capacitado" loading="eager" />
-              <span class="hero-images__badge">Equipamiento profesional</span>
-            </div>
-            <div class="hero-images__secondary">
-              <img src="assets/img/hero-guardia-2.jpg" alt="Personal de seguridad ECUASECURITY en servicio" loading="eager" />
-              <span class="hero-images__badge">Vigilancia</span>
-            </div>
-            <div class="hero-images__secondary">
-              <img src="assets/img/hero-vehiculo.jpg" alt="Vehículo operativo de ECUASECURITY" loading="eager" />
-              <span class="hero-images__badge">Flota operativa</span>
-            </div>
-          </div>
-        </div>
       </div>
 
       <a href="#nosotros" class="hero__scroll-cue">
         Desplázate
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
       </a>
+    </section>
+
+    <section class="hero-showcase" aria-label="Capacidades operativas de ECUASECURITY">
+      <div class="container">
+        <div class="hero-showcase__grid">
+          <figure class="hero-showcase__card reveal">
+            <div class="hero-showcase__media">
+              <img src="assets/img/hero-guardia.jpg" alt="Guardia de ECUASECURITY con equipamiento profesional" loading="lazy" decoding="async" />
+            </div>
+            <figcaption>
+              <span>Personal preparado</span>
+              <strong>Equipamiento profesional</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="hero-showcase__card reveal reveal-delay-1">
+            <div class="hero-showcase__media">
+              <img src="assets/img/hero-guardia-2.jpg" alt="Personal de vigilancia de ECUASECURITY" loading="lazy" decoding="async" />
+            </div>
+            <figcaption>
+              <span>Presencia y prevención</span>
+              <strong>Vigilancia especializada</strong>
+            </figcaption>
+          </figure>
+
+          <figure class="hero-showcase__card reveal reveal-delay-2">
+            <div class="hero-showcase__media">
+              <img src="assets/img/hero-vehiculo.jpg" alt="Vehículo de la flota operativa de ECUASECURITY" loading="lazy" decoding="async" />
+            </div>
+            <figcaption>
+              <span>Respuesta coordinada</span>
+              <strong>Flota operativa</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- ====================================================================
@@ -176,7 +205,7 @@
           <p>ECUASECURITY C. Ltda. es una empresa conformada por especialistas en gestión de seguridad. Nuestra experiencia suma 20 años con profesionales, agentes y aliados estratégicos; ofrecemos las mejores soluciones, servicios y tecnología con enfoque en mejorar la capacidad productiva de nuestros clientes, mediante la reducción de costos, eliminando riesgos y vulnerabilidades, con una visión de proteger la vida y la propiedad.</p>
           <p style="margin-top: var(--space-sm);">Empresa constituida legalmente, conformada por un equipo profesional altamente calificado que se desempeña en diferentes áreas de trabajo, con equipamiento de alta calidad y operaciones a nivel nacional, con personal gerencial, administrativo, técnico y operativo (guardias y supervisores).</p>
 
-          <ul class="feature-list" style="margin-top: var(--space-md);" aria-label="Documentación y certificaciones">
+          <ul class="feature-list about-compliance" aria-label="Documentación y certificaciones">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
               Permiso de operaciones vigente
@@ -203,7 +232,7 @@
             </li>
           </ul>
 
-          <div class="grid grid--2" style="margin-top: var(--space-lg);">
+          <div class="grid about-features">
             <div class="feature-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px;color:var(--color-primary-light);margin-bottom:0.5rem;"><rect x="4" y="11" width="16" height="9" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>
               <h4>Confiabilidad</h4>
@@ -232,7 +261,7 @@
               <span class="stat-card__label">Años de trayectoria</span>
             </div>
             <div class="stat-card">
-              <span class="stat-card__value">Operaciones</span>
+              <span class="stat-card__value stat-card__value--text">Operaciones</span>
               <span class="stat-card__label">a nivel nacional</span>
             </div>
             <div class="stat-card">
@@ -307,10 +336,10 @@
 
           <article class="partner-card reveal reveal-delay-1">
             <div class="partner-card__img">
-              <img src="assets/img/aliado-asegi.jpg" alt="ASEGI — Inteligencia corporativa y análisis de fraudes" />
+              <img src="assets/img/aliado-asegi.jpg" alt="ECUASECURITY — Inteligencia corporativa y análisis de fraudes" />
             </div>
             <div class="partner-card__body">
-              <h3 class="partner-card__name">ASEGI</h3>
+              <h3 class="partner-card__name">ECUASECURITY</h3>
               <p class="partner-card__desc">Empresa de inteligencia corporativa y fraudes.</p>
               <ul class="partner-card__services">
                 <li>Análisis de fraudes dentro y fuera del país</li>
@@ -386,7 +415,7 @@
           <p>Soluciones integrales de seguridad privada diseñadas para proteger personas, bienes e instalaciones con tecnología y personal capacitado.</p>
         </div>
 
-        <div class="card-grid">
+        <div class="card-grid services-grid">
           <article class="service-card reveal">
             <div class="service-card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" /></svg>
@@ -430,6 +459,18 @@
             <h3>GPS y localización</h3>
             <p>Ubicación y trazabilidad de unidades y personal en tiempo real para operaciones de seguridad.</p>
             <a href="#gps" class="service-card__link">
+              Conocer más
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13l2-5h12l2 5v5H4v-5z" /><path d="M7 13h10M7 18v2M17 18v2" /><circle cx="7" cy="16" r="1" /><circle cx="17" cy="16" r="1" /></svg>
+            </div>
+            <h3>Vehículos blindados</h3>
+            <p>Protección balística nivel 3A, transporte ejecutivo y acompañamiento con personal armado.</p>
+            <a href="#vehiculos-blindados" class="service-card__link">
               Conocer más
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
@@ -603,6 +644,42 @@
     </section>
 
     <!-- ====================================================================
+         SERVICIO DE VEHÍCULOS BLINDADOS
+         ==================================================================== -->
+    <section class="section armored-service" id="vehiculos-blindados" aria-labelledby="vehiculos-blindados-title">
+      <div class="container split split--reverse reveal">
+        <div class="split__content">
+          <span class="section-eyebrow">Servicio</span>
+          <h2 id="vehiculos-blindados-title">Vehículos blindados</h2>
+          <p>Movilidad protegida para ejecutivos, personal estratégico y operaciones de alto riesgo, con unidades preparadas y acompañamiento profesional.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Blindaje balístico nivel 3A
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Protección nivel 3A Plus
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Transporte ejecutivo con conductores armados
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg>
+              Radiocomunicación y seguimiento GPS
+            </li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary">Solicitar este servicio</a>
+        </div>
+        <div class="split__visual armored-service__visual">
+          <img src="assets/img/aliado-vehiculos-blindados.jpg" alt="Vehículo blindado para operaciones de seguridad" loading="lazy" decoding="async" />
+          <span>Protección balística nivel 3A</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
          8. CONSULTORÍA Y GESTIÓN (servicios adicionales del folleto)
          ==================================================================== -->
     <section class="section" id="consultoria" aria-labelledby="consultoria-title">
@@ -768,7 +845,7 @@
           <h2 id="contacto-title">Contacto</h2>
           <p>¿Necesitas una solución de seguridad para tu empresa o propiedad? Escríbenos y nuestro equipo se pondrá en contacto contigo.</p>
 
-          <div style="margin-top: var(--space-lg);">
+          <div class="contact-info-list">
             <div class="contact-info-item">
               <span class="contact-info-item__icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1.5a11 11 0 0 0 5.5 5.5L15 13l5 2v2c0 1-1 2-2 2C10.5 19 4 12.5 4 5z" /></svg>
@@ -777,6 +854,7 @@
                 <h4>Teléfonos</h4>
                 <p>093 922 6390</p>
                 <p>098 728 3676</p>
+                <p>095 891 8437</p>
               </div>
             </div>
 
@@ -786,8 +864,11 @@
               </span>
               <div>
                 <h4>Correo electrónico</h4>
-                <p><a href="mailto:operation.security@ecuasecurity.com.ec">operation.security@ecuasecurity.com.ec</a></p>
-                <p><a href="mailto:asistenteoperaciones@ecuasecurity.com.ec">asistenteoperaciones@ecuasecurity.com.ec</a></p>
+                <div class="contact-email-list">
+                  <a href="mailto:operation.security@ecuasecurity.com.ec">operation.security@ecuasecurity.com.ec</a>
+                  <a href="mailto:asistenteoperaciones@ecuasecurity.com.ec">asistenteoperaciones@ecuasecurity.com.ec</a>
+                  <a href="mailto:manager.security@ecuasecurity.com.ec">manager.security@ecuasecurity.com.ec</a>
+                </div>
               </div>
             </div>
 
@@ -797,7 +878,7 @@
               </span>
               <div>
                 <h4>Dirección</h4>
-                <p>Av. Galo Plaza y Calle Rafael Ramos, Quito,Ecuador</p>
+                <p>Av. Galo Plaza y Calle Rafael Ramos<br />Quito, Ecuador</p>
               </div>
             </div>
 
@@ -842,6 +923,7 @@
                 <option value="monitoreo">Videovigilancia y videoverificación</option>
                 <option value="rondas">Control de rondas</option>
                 <option value="gps">GPS y localización</option>
+                <option value="vehiculos-blindados">Vehículos blindados</option>
                 <option value="consultoria">Consultoría y análisis de riesgo</option>
                 <option value="otro">Otro</option>
               </select>
@@ -896,16 +978,21 @@
           <li><a href="#monitoreo">Videovigilancia y videoverificación</a></li>
           <li><a href="#rondas">Control de rondas</a></li>
           <li><a href="#gps">GPS y localización</a></li>
+          <li><a href="#vehiculos-blindados">Vehículos blindados</a></li>
           <li><a href="#consultoria">Consultoría</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>Contacto</h4>
-        <ul>
+        <ul class="footer-contact-list">
           <li>Cel: 093 922 6390</li>
-          <li>operation.security@ecuasecurity.com.ec</li>
-          <li>Av. Galo Plaza y Calle Rafael Ramos, Quito,Ecuador</li>
+          <li>Cel: 098 728 3676</li>
+          <li>Cel: 095 891 8437</li>
+          <li><a href="mailto:operation.security@ecuasecurity.com.ec">operation.security@ecuasecurity.com.ec</a></li>
+          <li><a href="mailto:asistenteoperaciones@ecuasecurity.com.ec">asistenteoperaciones@ecuasecurity.com.ec</a></li>
+          <li><a href="mailto:manager.security@ecuasecurity.com.ec">manager.security@ecuasecurity.com.ec</a></li>
+          <li>Av. Galo Plaza y Calle Rafael Ramos<br />Quito, Ecuador</li>
         </ul>
       </div>
     </div>
