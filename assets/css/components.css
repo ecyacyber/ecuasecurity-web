@@ -1029,8 +1029,19 @@ textarea.form-control {
     linear-gradient(145deg, #0a0a0a, #111111);
 }
 
-.armored-service__visual {
-  position: relative;
+.armored-service .split {
+  grid-template-columns: 0.82fr 1.18fr;
+}
+
+.armored-service__visuals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.armored-service__vehicle {
+  min-width: 0;
+  margin: 0;
   overflow: hidden;
   border: 1px solid rgba(230, 50, 50, 0.28);
   border-radius: var(--radius-lg);
@@ -1038,26 +1049,34 @@ textarea.form-control {
   box-shadow: var(--shadow-lg);
 }
 
-.armored-service__visual img {
+.armored-service__vehicle img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   display: block;
   object-fit: contain;
+  background: #151515;
 }
 
-.armored-service__visual span {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-full);
-  background: rgba(5, 8, 12, 0.76);
-  color: #ffffff;
-  font-size: var(--fs-xs);
+.armored-service__vehicle figcaption {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem 0.9rem 0.9rem;
+  border-top: 1px solid var(--color-border);
+  background: rgba(5, 8, 12, 0.42);
+}
+
+.armored-service__vehicle figcaption span {
+  color: var(--color-primary-light);
+  font-size: 0.68rem;
   font-weight: 600;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.armored-service__vehicle figcaption strong {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
 }
 
 .armored-service .btn {

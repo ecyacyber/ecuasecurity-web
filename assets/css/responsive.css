@@ -253,6 +253,10 @@
 
 /* --- Tablets --- */
 @media (max-width: 900px) {
+  .armored-service .split {
+    grid-template-columns: 1fr;
+  }
+
   #nosotros .split__visual {
     transform: translateX(var(--space-sm));
   }
@@ -410,6 +414,10 @@
 
 /* --- Móvil --- */
 @media (max-width: 640px) {
+  .armored-service__visuals {
+    grid-template-columns: 1fr;
+  }
+
   .hero-showcase {
     padding-block: var(--space-md);
   }
