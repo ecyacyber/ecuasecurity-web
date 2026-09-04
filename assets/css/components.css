@@ -415,6 +415,16 @@
 }
 
 /* --- Clientes --- */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.certifications-grid > .client-card {
+  grid-column: span 2;
+}
+
 .clients-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
