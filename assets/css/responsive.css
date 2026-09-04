@@ -122,6 +122,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -283,8 +287,13 @@
   .stats-grid,
   .grid--2,
   .grid--3,
-  .grid--4 {
+  .grid--4,
+  .partner-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-images {
+    max-width: 360px;
   }
 
   .footer-grid {
