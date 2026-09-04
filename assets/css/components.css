@@ -474,6 +474,10 @@
   background: #999999;
 }
 
+.client-card__logo--dark {
+  background: #1f1d20;
+}
+
 .client-card__logo img {
   width: 100%;
   height: 100%;
