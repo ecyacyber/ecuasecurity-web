@@ -117,4 +117,36 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* --- Formulario de contacto → WhatsApp --- */
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const nombre = contactForm.nombre.value.trim();
+      const telefono = contactForm.telefono.value.trim();
+      const email = contactForm.email.value.trim();
+      const servicioSelect = contactForm.servicio;
+      const servicio = servicioSelect.selectedIndex > 0
+        ? servicioSelect.options[servicioSelect.selectedIndex].text
+        : "";
+      const mensaje = contactForm.mensaje.value.trim();
+
+      let text = "Hola ECUASECURITY, deseo solicitar información.\n\n";
+      text += "Nombre: " + nombre + "\n";
+      if (telefono) text += "Teléfono: " + telefono + "\n";
+      text += "Correo: " + email + "\n";
+      if (servicio) text += "Servicio de interés: " + servicio + "\n";
+      text += "\nMensaje:\n" + mensaje + "\n\n";
+      text += "Enviado desde web.ecuasecurity.net";
+
+      const url = "https://wa.me/593939226390?text=" + encodeURIComponent(text);
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+  }
 })();
